@@ -16,7 +16,7 @@
         <nav class="navbar" id="navbar">
           <div class="nav-container">
             <a href="index.html" class="nav-logo" aria-label="MOMO IT Technologies Home">
-              <div class="logo-icon">&lt;/&gt;</div>
+              <img src="assets/favicon.png" alt="MOMO IT Technologies Logo" class="nav-logo-img" />
               <div class="logo-text-wrap">
                 <span class="logo-momo">MOMO IT</span>
                 <span class="logo-tech">TECHNOLOGIES</span>
@@ -53,7 +53,7 @@
           <div class="footer-wrap">
             <div class="footer-brand">
               <a href="index.html" class="footer-logo">
-                <div class="logo-icon">&lt;/&gt;</div>
+                <img src="assets/favicon.png" alt="MOMO IT Technologies Logo" class="footer-logo-img" />
                 <div>
                   <span class="footer-logo-text">MOMO IT</span>
                   <span class="footer-logo-sub">TECHNOLOGIES</span>
@@ -67,6 +67,7 @@
               <div class="footer-socials">
                 <a href="tel:+918639831132" aria-label="Call Mohan sir" class="social-link" title="Call +91 86398 31132"><i class="ph-fill ph-phone"></i></a>
                 <a href="https://wa.me/918639831132?text=Hi%20Mohan%20sir%2C%20I%20have%20an%20enquiry%20regarding%20training%20at%20MOMO%20IT%20Technologies." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-link" title="WhatsApp"><i class="ph-fill ph-whatsapp-logo"></i></a>
+                <a href="https://t.me/Momo_IT_Technologies" target="_blank" rel="noopener noreferrer" aria-label="Telegram Channel" class="social-link telegram-social-btn" title="Telegram Channel: @Momo_IT_Technologies"><i class="ph-fill ph-telegram-logo"></i></a>
                 <a href="mailto:mohandamerla2020@gmail.com" aria-label="Email MOMO IT" class="social-link" title="Email"><i class="ph-fill ph-envelope"></i></a>
                 <a href="https://www.urbanpro.com/kadapa/momo-it-technologies" target="_blank" rel="noopener noreferrer" aria-label="UrbanPro Profile" class="social-link" title="UrbanPro Verified Profile"><i class="ph-fill ph-seal-check"></i></a>
               </div>
@@ -88,6 +89,7 @@
               <h5>Direct Contact</h5>
               <p><i class="ph-fill ph-user-circle"></i> <strong>Mohan Damerla</strong> &nbsp;(Founder &amp; Trainer)</p>
               <p><i class="ph-fill ph-phone-call"></i> <a href="tel:+918639831132">+91 86398 31132</a></p>
+              <p><i class="ph-fill ph-telegram-logo" style="color:#24a1de;"></i> <a href="https://t.me/Momo_IT_Technologies" target="_blank" rel="noopener noreferrer">t.me/Momo_IT_Technologies</a></p>
               <p><i class="ph-fill ph-envelope-simple"></i> <a href="mailto:mohandamerla2020@gmail.com">mohandamerla2020@gmail.com</a></p>
               <p><i class="ph-fill ph-map-pin"></i> Kadapa, Andhra Pradesh, India</p>
               <p><i class="ph-fill ph-globe-hemisphere-east"></i> Pan-India Online Live Batches</p>
