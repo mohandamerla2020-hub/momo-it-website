@@ -1,0 +1,14 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+*.code-workspace
+
+# Vercel
+.vercel/
+
+# Environment
+.env
+.env.local
