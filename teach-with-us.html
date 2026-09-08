@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teach with MOMO IT Technologies | Earn 50% Revenue Share as an Instructor</title>
+  <meta name="description" content="Become an online software instructor at MOMO IT Technologies. Teach any IT course, set your own schedule, and earn 50% of student fees. Apply online today!" />
+  <meta name="keywords" content="Teach software training online India, tutor jobs MOMO IT Technologies, IT trainer revenue share, teach Python Java DevOps Kadapa" />
+  <meta property="og:title" content="Teach with MOMO IT Technologies | 50% Revenue Share" />
+  <meta property="og:description" content="Join MOMO IT as a trainer. Teach online across India and earn 50% of the course fees." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://momo-it-website.vercel.app/teach-with-us.html" />
+  <link rel="canonical" href="https://momo-it-website.vercel.app/teach-with-us.html" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="teach">
+
+  <!-- Header Slot (Injected by js/components.js) -->
+  <header id="site-header"></header>
+
+  <main>
+    <!-- ==================== PAGE HEADER ==================== -->
+    <section class="page-header">
+      <div class="page-header-inner" data-animate="fade-up">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="ph ph-caret-right"></i>
+          <span class="current">Teach with Us</span>
+        </nav>
+        <h1 class="page-header-title">Teach with MOMO IT &amp; <span class="gradient-gold-text">Earn 50% Share</span></h1>
+        <p class="page-header-desc">
+          Are you an experienced software developer, QA engineer, or tech professional? Partner with MOMO IT Technologies to offer authentic online courses throughout India and keep half of all revenue.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== TEACH MAIN LAYOUT ==================== -->
+    <section class="teach-section">
+      <div class="section-wrap">
+        <div class="teach-layout">
+
+          <!-- Left Column: Visual & Perks -->
+          <div class="teach-img-col" data-animate="fade-right">
+            <div class="teach-img-wrap">
+              <img src="assets/tutor.jpg" alt="Software trainer teaching online at MOMO IT Technologies" loading="lazy" />
+              <div class="teach-img-badge">
+                <i class="ph-fill ph-currency-inr"></i> Earn 50% Revenue Share
+              </div>
+            </div>
+
+            <div class="teach-perks">
+              <div class="teach-perk-item">
+                <div class="tp-icon"><i class="ph-fill ph-currency-inr"></i></div>
+                <div>
+                  <h5>50% Direct Revenue Share</h5>
+                  <p>Earn a guaranteed 50% cut on every enrolled student's fee with transparent accounting.</p>
+                </div>
+              </div>
+
+              <div class="teach-perk-item">
+                <div class="tp-icon"><i class="ph-fill ph-globe-hemisphere-east"></i></div>
+                <div>
+                  <h5>Pan-India Online Reach</h5>
+                  <p>MOMO IT connects you with eager students and job seekers across all regions of India.</p>
+                </div>
+              </div>
+
+              <div class="teach-perk-item">
+                <div class="tp-icon"><i class="ph-fill ph-clock"></i></div>
+                <div>
+                  <h5>Complete Schedule Flexibility</h5>
+                  <p>Teach part-time alongside your day job — pick mornings, evenings, or weekend-only batches.</p>
+                </div>
+              </div>
+
+              <div class="teach-perk-item">
+                <div class="tp-icon"><i class="ph-fill ph-megaphone-simple"></i></div>
+                <div>
+                  <h5>Zero Marketing Burden</h5>
+                  <p>We handle student acquisition, lead conversion, and enrollment logistics so you focus on teaching.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Application Form -->
+          <div class="teach-form-col" data-animate="fade-left">
+            <div class="section-tag-pill teach-tag">Instructor Partnership</div>
+            <h2 class="section-heading">Apply as an <span class="gradient-gold-text">Instructor</span></h2>
+            <p class="teach-desc">
+              Fill in your professional details below. Your application will be sent directly to <strong>Mohan Damerla</strong>, founder of MOMO IT Technologies, who will connect with you via WhatsApp to discuss curriculum, batch scheduling, and onboarding.
+            </p>
+
+            <form class="teach-form glass-card" id="teachForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="tName">Your Full Name *</label>
+                  <input type="text" id="tName" name="name" placeholder="e.g. Ramesh Kumar" required autocomplete="name" />
+                  <span class="field-error" id="tNameErr"></span>
+                </div>
+                <div class="form-group">
+                  <label for="tPhone">WhatsApp / Phone Number *</label>
+                  <input type="tel" id="tPhone" name="phone" placeholder="+91 XXXXX XXXXX" required autocomplete="tel" />
+                  <span class="field-error" id="tPhoneErr"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="tEmail">Email Address *</label>
+                <input type="email" id="tEmail" name="email" placeholder="ramesh@gmail.com" required autocomplete="email" />
+                <span class="field-error" id="tEmailErr"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="tCourse">Technology / Subject You Wish to Teach *</label>
+                <input type="text" id="tCourse" name="course" placeholder="e.g. Python, Java Full Stack, AWS &amp; DevOps, React, PowerBI, QA Testing..." required />
+                <span class="field-error" id="tCourseErr"></span>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="tExp">Years of IT / Teaching Experience *</label>
+                  <select id="tExp" name="experience" required>
+                    <option value="">Select experience</option>
+                    <option value="1-2">1–2 Years</option>
+                    <option value="3-5">3–5 Years</option>
+                    <option value="5-10">5–10 Years</option>
+                    <option value="10+">10+ Years</option>
+                  </select>
+                  <span class="field-error" id="tExpErr"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="tMode">Preferred Mode</label>
+                  <select id="tMode" name="mode">
+                    <option value="online">Online Classes Only (Pan-India)</option>
+                    <option value="both">Online + Offline (Kadapa)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="tMsg">Brief Background &amp; Current Designation (optional)</label>
+                <textarea id="tMsg" name="message" rows="3" placeholder="Tell us about your current tech role, certifications, or past mentoring experience..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold btn-full" id="teachSubmitBtn">
+                <i class="ph-fill ph-paper-plane-tilt"></i>
+                <span>Submit Tutor Application</span>
+              </button>
+
+              <p class="form-note">
+                <i class="ph-fill ph-lock"></i> Your details are reviewed directly by Mohan sir · 100% confidential
+              </p>
+
+              <div class="form-success" id="teachFormSuccess">
+                <i class="ph-fill ph-check-circle"></i>
+                <span>Application submitted successfully! Mohan sir will contact you shortly on WhatsApp.</span>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WHAT CAN YOU TEACH? ==================== -->
+    <section class="subjects-section" style="background: var(--bg-secondary); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+      <div class="section-wrap">
+        <div class="section-tag-pill" style="background: rgba(245,158,11,0.12); border-color: rgba(245,158,11,0.3); color: #fbbf24;">
+          Course Domains
+        </div>
+        <h2 class="section-heading">High-Demand Subjects We Are <span class="gradient-gold-text">Looking For</span></h2>
+        <p class="section-sub">Students across India regularly contact us for these in-demand training domains.</p>
+
+        <div class="why-grid">
+          <div class="why-card glass-card" data-animate="fade-up">
+            <div class="why-icon" style="background: var(--gradient-gold); color: #0f172a;"><i class="ph-fill ph-terminal-window"></i></div>
+            <h4>Python &amp; Data Science</h4>
+            <p>Python programming, Pandas, NumPy, Machine Learning, Data Analytics, and SQL.</p>
+          </div>
+
+          <div class="why-card glass-card" data-animate="fade-up" data-delay="100">
+            <div class="why-icon" style="background: var(--gradient-gold); color: #0f172a;"><i class="ph-fill ph-browser"></i></div>
+            <h4>Full-Stack Web Development</h4>
+            <p>MERN Stack (MongoDB, Express, React, Node.js), JavaScript, HTML5/CSS3, Next.js.</p>
+          </div>
+
+          <div class="why-card glass-card" data-animate="fade-up" data-delay="200">
+            <div class="why-icon" style="background: var(--gradient-gold); color: #0f172a;"><i class="ph-fill ph-cloud"></i></div>
+            <h4>Cloud Computing &amp; DevOps</h4>
+            <p>AWS, Azure, Docker, Kubernetes, Linux administration, CI/CD pipelines, and Terraform.</p>
+          </div>
+
+          <div class="why-card glass-card" data-animate="fade-up" data-delay="300">
+            <div class="why-icon" style="background: var(--gradient-gold); color: #0f172a;"><i class="ph-fill ph-coffee"></i></div>
+            <h4>Java Full Stack</h4>
+            <p>Core Java, Spring Boot, Microservices, Hibernate, REST APIs, and Angular / React.</p>
+          </div>
+
+          <div class="why-card glass-card" data-animate="fade-up" data-delay="400">
+            <div class="why-icon" style="background: var(--gradient-gold); color: #0f172a;"><i class="ph-fill ph-bug"></i></div>
+            <h4>Performance &amp; API Testing</h4>
+            <p>JMeter, Postman, RestAssured, Cypress, Playwright, or Mobile Testing with Appium.</p>
+          </div>
+
+          <div class="why-card glass-card" data-animate="fade-up" data-delay="500">
+            <div class="why-icon" style="background: var(--gradient-gold); color: #0f172a;"><i class="ph-fill ph-chart-bar"></i></div>
+            <h4>Business Tools &amp; Analytics</h4>
+            <p>Power BI, Tableau, Advanced Excel, Salesforce Administration, or Tally Prime.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== HOW IT WORKS (3 STEPS) ==================== -->
+    <section class="process-section">
+      <div class="section-wrap">
+        <div class="section-tag-pill">Simple Onboarding</div>
+        <h2 class="section-heading">How Tutor Partnership <span class="gradient-text">Works</span></h2>
+        <div class="why-grid">
+          <div class="why-card glass-card" data-animate="fade-up">
+            <div class="why-icon" style="background: var(--gradient);">1</div>
+            <h4>Submit Your Profile</h4>
+            <p>Fill out the application form with your tech stack, years of experience, and contact number.</p>
+          </div>
+          <div class="why-card glass-card" data-animate="fade-up" data-delay="100">
+            <div class="why-icon" style="background: var(--gradient);">2</div>
+            <h4>Agree on Syllabus &amp; Schedule</h4>
+            <p>Mohan sir connects with you to finalize your preferred batch timings and course curriculum outline.</p>
+          </div>
+          <div class="why-card glass-card" data-animate="fade-up" data-delay="200">
+            <div class="why-icon" style="background: var(--gradient);">3</div>
+            <h4>Launch &amp; Earn 50%</h4>
+            <p>MOMO IT enrolls students for your batch. You deliver live sessions and receive half of all fees directly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="cta-banner">
+      <div class="cta-banner-inner">
+        <h2 class="cta-banner-title">Have Questions Before <span class="gradient-gold-text">Applying?</span></h2>
+        <p class="cta-banner-sub">
+          Speak directly with Mohan sir on WhatsApp or over phone to discuss how we can collaborate.
+        </p>
+        <div class="cta-banner-btns">
+          <a href="https://wa.me/918639831132?text=Hi%20Mohan%20sir%2C%20I%20am%20interested%20in%20the%20Tutor%20Partnership%20Program%20at%20MOMO%20IT%20Technologies."
+             class="btn btn-gold btn-lg" target="_blank" rel="noopener noreferrer">
+            <i class="ph-fill ph-whatsapp-logo"></i> Chat with Mohan Sir
+          </a>
+          <a href="tel:+918639831132" class="btn btn-ghost btn-lg">
+            <i class="ph-fill ph-phone"></i> Call +91 86398 31132
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Slot (Injected by js/components.js) -->
+  <footer id="site-footer"></footer>
+
+  <!-- Scripts -->
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
