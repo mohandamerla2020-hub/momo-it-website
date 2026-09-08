@@ -16,7 +16,7 @@
         <nav class="navbar" id="navbar">
           <div class="nav-container">
             <a href="index.html" class="nav-logo" aria-label="MOMO IT Technologies Home">
-              <img src="assets/favicon.png" alt="MOMO IT Technologies Logo" class="nav-logo-img" />
+              <img src="assets/logo-mark.png" alt="MOMO IT Coding Symbol" class="nav-logo-mark" />
               <div class="logo-text-wrap">
                 <span class="logo-momo">MOMO IT</span>
                 <span class="logo-tech">TECHNOLOGIES</span>
@@ -53,7 +53,7 @@
           <div class="footer-wrap">
             <div class="footer-brand">
               <a href="index.html" class="footer-logo">
-                <img src="assets/favicon.png" alt="MOMO IT Technologies Logo" class="footer-logo-img" />
+                <img src="assets/logo-mark.png" alt="MOMO IT Coding Symbol" class="footer-logo-mark" />
                 <div>
                   <span class="footer-logo-text">MOMO IT</span>
                   <span class="footer-logo-sub">TECHNOLOGIES</span>
