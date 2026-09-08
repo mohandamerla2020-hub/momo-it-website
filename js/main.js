@@ -104,6 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const name = (enrollForm.fullName ? enrollForm.fullName.value : '').trim();
       const phone = (enrollForm.phoneNum ? enrollForm.phoneNum.value : '').trim();
       const email = (enrollForm.emailAddr ? enrollForm.emailAddr.value : '').trim();
+      const course = (enrollForm.courseChoice ? enrollForm.courseChoice.value : '').trim();
       const mode = (enrollForm.classMode ? enrollForm.classMode.value : '');
       const type = (enrollForm.enquiryType ? enrollForm.enquiryType.value : '');
       const msg = (enrollForm.msgArea ? enrollForm.msgArea.value : '').trim();
@@ -124,10 +125,11 @@ document.addEventListener('DOMContentLoaded', () => {
         `👤 Name: ${name}\n` +
         `📞 Phone: ${phone}\n` +
         (email ? `📧 Email: ${email}\n` : '') +
+        (course ? `📚 Selected Course: ${course}\n` : '') +
         `💻 Preferred Mode: ${modeMap[mode] || mode}\n` +
         `📋 Purpose: ${typeMap[type] || type}\n` +
         (msg ? `💬 Message: ${msg}\n` : '') +
-        `\nPlease share the course curriculum, schedule & fee details.`
+        `\nPlease share the syllabus, upcoming batch schedule & fee details.`
       );
 
       await new Promise(r => setTimeout(r, 600));
@@ -162,9 +164,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const modeErr = document.getElementById('modeError');
     const typeErr = document.getElementById('typeError');
 
+    const courseInput = document.getElementById('courseChoice');
+    const courseErr = document.getElementById('courseError');
+
     // Reset errors
-    [nameInput, phoneInput, modeInput, typeInput].forEach(inp => inp && inp.classList.remove('error'));
-    [nameErr, phoneErr, modeErr, typeErr].forEach(err => err && (err.textContent = ''));
+    [nameInput, phoneInput, courseInput, modeInput, typeInput].forEach(inp => inp && inp.classList.remove('error'));
+    [nameErr, phoneErr, courseErr, modeErr, typeErr].forEach(err => err && (err.textContent = ''));
 
     if (nameInput && !nameInput.value.trim()) {
       if (nameErr) nameErr.textContent = 'Please enter your name.';
@@ -179,6 +184,12 @@ document.addEventListener('DOMContentLoaded', () => {
         phoneInput.classList.add('error');
         valid = false;
       }
+    }
+
+    if (courseInput && !courseInput.value) {
+      if (courseErr) courseErr.textContent = 'Please select a course track.';
+      courseInput.classList.add('error');
+      valid = false;
     }
 
     if (modeInput && !modeInput.value) {

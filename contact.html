@@ -154,6 +154,18 @@
 
               <div class="form-row">
                 <div class="form-group">
+                  <label for="courseChoice">Course of Interest *</label>
+                  <select id="courseChoice" name="course" required>
+                    <option value="">Select Course Track</option>
+                    <option value="Selenium Automation with Java">Selenium Automation with Java</option>
+                    <option value="Artificial Intelligence &amp; GenAI">Artificial Intelligence &amp; GenAI</option>
+                    <option value="Digital Marketing &amp; Growth">Digital Marketing &amp; Growth</option>
+                    <option value="Career Guidance / Multiple Courses">Need Career Guidance / Multiple</option>
+                  </select>
+                  <span class="field-error" id="courseError"></span>
+                </div>
+
+                <div class="form-group">
                   <label for="classMode">Preferred Learning Mode *</label>
                   <select id="classMode" name="mode" required>
                     <option value="">Select Mode</option>
@@ -163,17 +175,17 @@
                   </select>
                   <span class="field-error" id="modeError"></span>
                 </div>
+              </div>
 
-                <div class="form-group">
-                  <label for="enquiryType">I want to *</label>
-                  <select id="enquiryType" name="type" required>
-                    <option value="">Select Option</option>
-                    <option value="demo">Book a Free Demo Class</option>
-                    <option value="enroll">Enroll in Next Batch</option>
-                    <option value="info">Ask About Fees &amp; Syllabus</option>
-                  </select>
-                  <span class="field-error" id="typeError"></span>
-                </div>
+              <div class="form-group">
+                <label for="enquiryType">I want to *</label>
+                <select id="enquiryType" name="type" required>
+                  <option value="">Select Option</option>
+                  <option value="demo">Book a Free Demo Class</option>
+                  <option value="enroll">Enroll in Next Batch</option>
+                  <option value="info">Ask About Fees &amp; Syllabus</option>
+                </select>
+                <span class="field-error" id="typeError"></span>
               </div>
 
               <div class="form-group">

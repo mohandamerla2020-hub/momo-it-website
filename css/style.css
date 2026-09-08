@@ -745,8 +745,173 @@ button {
 .avatar:first-child { margin-left: 0; }
 
 /* Hero Code Mockup Window */
+/* Hero Code & Image Windows */
 .hero-visual {
   position: relative;
+}
+
+.hero-img-window {
+  position: relative;
+  border-radius: var(--radius-xl);
+}
+
+.hero-main-photo {
+  width: 100%;
+  border-radius: var(--radius-xl);
+  object-fit: cover;
+  box-shadow: var(--shadow-lg), 0 0 60px rgba(37, 99, 235, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: block;
+}
+
+.badge-top-right {
+  top: -14px;
+  right: 12px;
+  color: #38bdf8;
+  background: rgba(17, 24, 39, 0.92);
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.badge-bottom-left {
+  bottom: -14px;
+  left: 12px;
+  color: #fbbf24;
+  background: rgba(17, 24, 39, 0.92);
+  border-color: rgba(245, 158, 11, 0.4);
+  animation-delay: 1.8s;
+}
+
+.badge-bottom-right {
+  top: 48%;
+  right: -16px;
+  color: #34d399;
+  background: rgba(17, 24, 39, 0.92);
+  border-color: rgba(16, 185, 129, 0.4);
+  animation-delay: 3.2s;
+}
+
+/* 3 Flagship Courses Grid */
+.flagship-courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 36px;
+}
+
+.flagship-course-card {
+  padding: 36px 28px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  border: 1px solid var(--glass-border);
+  background: var(--bg-card);
+  transition: var(--transition);
+}
+
+.flagship-course-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+}
+
+.fcc-qa:hover { border-color: rgba(56, 189, 248, 0.55); }
+.fcc-ai:hover { border-color: rgba(168, 85, 247, 0.55); }
+.fcc-dm:hover { border-color: rgba(245, 158, 11, 0.55); }
+
+.fcc-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 18px;
+  width: fit-content;
+}
+
+.fcc-badge-qa { background: rgba(37, 99, 235, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
+.fcc-badge-ai { background: rgba(147, 51, 234, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
+.fcc-badge-dm { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+
+.fcc-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.65rem;
+  margin-bottom: 18px;
+}
+
+.fcc-icon-qa { background: linear-gradient(135deg, #2563eb, #38bdf8); color: #fff; box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35); }
+.fcc-icon-ai { background: linear-gradient(135deg, #7c3aed, #a855f7); color: #fff; box-shadow: 0 6px 20px rgba(124, 58, 237, 0.35); }
+.fcc-icon-dm { background: linear-gradient(135deg, #d97706, #fbbf24); color: #0f172a; box-shadow: 0 6px 20px rgba(217, 119, 6, 0.35); }
+
+.fcc-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+
+.fcc-desc {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+
+.fcc-meta {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  margin-bottom: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.fcc-meta span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.fcc-points {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+
+.fcc-points li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+.fcc-points li i {
+  color: #10b981;
+  font-size: 1.1em;
+  flex-shrink: 0;
+}
+
+.fcc-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: auto;
 }
 
 .code-window {
@@ -2267,6 +2432,13 @@ button {
 
   .course-cards-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flagship-courses-grid {
+    grid-template-columns: 1fr;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .why-grid {
