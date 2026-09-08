@@ -80,6 +80,7 @@
         <li><a href="#curriculum" class="nav-link">Curriculum</a></li>
         <li><a href="#testimonials" class="nav-link">Reviews</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#teach" class="nav-link teach-link">Teach with Us</a></li>
         <li><a href="#enroll" class="btn btn-primary btn-nav" id="navEnrollBtn">Enroll Now</a></li>
       </ul>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -196,6 +197,30 @@
     </div>
   </section>
 
+  <!-- ==================== STUDENTS BANNER ====================
+  <section class="students-banner">
+    <div class="students-banner-inner">
+      <div class="students-banner-content" data-animate="fade-right">
+        <div class="section-tag-pill">Your Future Starts Here</div>
+        <h2 class="students-banner-title">Join Hundreds of <span class="gradient-text">Students</span><br/>Across India</h2>
+        <p>From freshers to working professionals — our training is designed for anyone who wants to break into tech and land a high-paying job in software testing.</p>
+        <div class="students-banner-stats">
+          <div class="sbs-item"><span>50+</span><small>Students Trained</small></div>
+          <div class="sbs-item"><span>MNC</span><small>Placements</small></div>
+          <div class="sbs-item"><span>🇮🇳</span><small>Pan-India Online</small></div>
+        </div>
+        <div class="students-banner-ctas">
+          <a href="#enroll" class="btn btn-primary btn-lg"><i class="ph-fill ph-rocket-launch"></i> Start Learning Today</a>
+          <a href="https://wa.me/918639831132?text=Hi%20Mohan%20sir%2C%20I%20want%20a%20free%20demo%20class." class="btn btn-ghost btn-lg" target="_blank" rel="noopener noreferrer"><i class="ph-fill ph-whatsapp-logo"></i> Free Demo</a>
+        </div>
+      </div>
+      <div class="students-banner-img" data-animate="fade-left">
+        <img src="assets/students.jpg" alt="Happy students with laptops ready to start their tech career" loading="lazy" />
+        <div class="img-badge img-badge-1"><i class="ph-fill ph-graduation-cap"></i> MNC Placed ✓</div>
+        <div class="img-badge img-badge-2"><i class="ph-fill ph-india"></i> Pan-India Online</div>
+      </div>
+    </div>
+  </section>
   <!-- ==================== STATS ==================== -->
   <section class="stats-section" aria-label="Key statistics">
     <div class="stats-container">
@@ -759,6 +784,99 @@
     </div>
   </section>
 
+  <!-- ==================== TEACH WITH MOMO IT ====================
+  <section class="teach-section" id="teach">
+    <div class="section-wrap">
+      <div class="teach-layout">
+        <div class="teach-img-col" data-animate="fade-right">
+          <div class="teach-img-wrap">
+            <img src="assets/tutor.jpg" alt="Software trainer teaching online at MOMO IT Technologies" loading="lazy" />
+            <div class="teach-img-badge"><i class="ph-fill ph-currency-inr"></i> Earn 50% Revenue Share</div>
+          </div>
+          <div class="teach-perks">
+            <div class="teach-perk-item">
+              <div class="tp-icon"><i class="ph-fill ph-currency-inr"></i></div>
+              <div><h5>50% Revenue Share</h5><p>Earn half of every student fee — directly, transparently.</p></div>
+            </div>
+            <div class="teach-perk-item">
+              <div class="tp-icon"><i class="ph-fill ph-globe-hemisphere-east"></i></div>
+              <div><h5>Teach Pan-India</h5><p>Reach students from any corner of India — fully online.</p></div>
+            </div>
+            <div class="teach-perk-item">
+              <div class="tp-icon"><i class="ph-fill ph-clock"></i></div>
+              <div><h5>Flexible Timing</h5><p>Set your own schedule and batch timings — complete freedom.</p></div>
+            </div>
+            <div class="teach-perk-item">
+              <div class="tp-icon"><i class="ph-fill ph-megaphone-simple"></i></div>
+              <div><h5>We Handle Marketing</h5><p>MOMO IT promotes your course — you just focus on teaching.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="teach-form-col" data-animate="fade-left">
+          <div class="section-tag-pill teach-tag">Teach with MOMO IT</div>
+          <h2 class="section-heading">Are You an Expert?<br/><span class="gradient-text">Teach &amp; Earn with Us</span></h2>
+          <p class="teach-desc">MOMO IT Technologies is expanding across India. We invite experienced software professionals to join us as online trainers and earn <strong>50% of every student's course fee</strong> — while we handle enrollments, marketing, and support.</p>
+          <form class="teach-form glass-card" id="teachForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="tName">Your Full Name *</label>
+                <input type="text" id="tName" name="name" placeholder="Your name" required />
+                <span class="field-error" id="tNameErr"></span>
+              </div>
+              <div class="form-group">
+                <label for="tPhone">Phone Number *</label>
+                <input type="tel" id="tPhone" name="phone" placeholder="+91 XXXXX XXXXX" required />
+                <span class="field-error" id="tPhoneErr"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="tEmail">Email Address *</label>
+              <input type="email" id="tEmail" name="email" placeholder="your@email.com" required />
+              <span class="field-error" id="tEmailErr"></span>
+            </div>
+            <div class="form-group">
+              <label for="tCourse">Course / Subject You Want to Teach *</label>
+              <input type="text" id="tCourse" name="course" placeholder="e.g., Python, Web Development, Java, AWS, Tally..." required />
+              <span class="field-error" id="tCourseErr"></span>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="tExp">Years of Experience *</label>
+                <select id="tExp" name="experience" required>
+                  <option value="">Select experience</option>
+                  <option value="1-2">1–2 Years</option>
+                  <option value="3-5">3–5 Years</option>
+                  <option value="5-10">5–10 Years</option>
+                  <option value="10+">10+ Years</option>
+                </select>
+                <span class="field-error" id="tExpErr"></span>
+              </div>
+              <div class="form-group">
+                <label for="tMode">Preferred Teaching Mode</label>
+                <select id="tMode" name="mode">
+                  <option value="online">Online Only</option>
+                  <option value="both">Online + Offline</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="tMsg">Tell us about yourself (optional)</label>
+              <textarea id="tMsg" name="message" rows="3" placeholder="Your background, certifications, or any other info..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="teachSubmitBtn">
+              <i class="ph-fill ph-paper-plane-tilt"></i>
+              <span>Apply to Teach</span>
+            </button>
+            <p class="form-note"><i class="ph-fill ph-lock"></i> Your details go directly to Mohan sir · No spam</p>
+            <div class="form-success" id="teachFormSuccess">
+              <i class="ph-fill ph-check-circle"></i>
+              <span>Application sent! Mohan sir will contact you shortly.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- ==================== FOOTER ==================== -->
   <footer class="footer">
     <div class="footer-wrap">

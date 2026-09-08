@@ -221,4 +221,62 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, 100);
 
+  // ---- Teach with MOMO IT Form ----
+  const teachForm    = document.getElementById('teachForm');
+  const teachSubmit  = document.getElementById('teachSubmitBtn');
+  const teachSuccess = document.getElementById('teachFormSuccess');
+
+  if (teachForm) {
+    teachForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      let valid = true;
+      const checks = [
+        { id: 'tName',   errId: 'tNameErr',   msg: 'Please enter your name.' },
+        { id: 'tPhone',  errId: 'tPhoneErr',  msg: 'Please enter a valid phone number.' },
+        { id: 'tEmail',  errId: 'tEmailErr',  msg: 'Please enter your email.' },
+        { id: 'tCourse', errId: 'tCourseErr', msg: 'Please enter the course/subject you want to teach.' },
+        { id: 'tExp',    errId: 'tExpErr',    msg: 'Please select your experience level.' },
+      ];
+      checks.forEach(c => {
+        const el = document.getElementById(c.id);
+        const err = document.getElementById(c.errId);
+        el.classList.remove('error'); err.textContent = '';
+        if (!el.value.trim()) { err.textContent = c.msg; el.classList.add('error'); valid = false; }
+      });
+      if (!valid) { teachForm.querySelector('.error')?.scrollIntoView({ behavior:'smooth', block:'center' }); return; }
+
+      teachSubmit.disabled = true;
+      teachSubmit.innerHTML = '<i class="ph ph-circle-notch" style="animation:spin 1s linear infinite"></i> <span>Sending...</span>';
+
+      const name   = document.getElementById('tName').value.trim();
+      const phone  = document.getElementById('tPhone').value.trim();
+      const email  = document.getElementById('tEmail').value.trim();
+      const course = document.getElementById('tCourse').value.trim();
+      const exp    = document.getElementById('tExp').value;
+      const mode   = document.getElementById('tMode').value;
+      const tmsg   = document.getElementById('tMsg').value.trim();
+
+      const waMsg = encodeURIComponent(
+        `🎓 *New Tutor Application — MOMO IT Technologies*\n\n` +
+        `👤 Name: ${name}\n📞 Phone: ${phone}\n📧 Email: ${email}\n` +
+        `📚 Course to Teach: ${course}\n⏳ Experience: ${exp} years\n` +
+        `💻 Mode: ${mode === 'both' ? 'Online + Offline' : 'Online Only'}\n` +
+        (tmsg ? `💬 About: ${tmsg}` : '')
+      );
+
+      await new Promise(r => setTimeout(r, 800));
+      teachSubmit.innerHTML = '<i class="ph-fill ph-check-circle"></i> <span>Application Sent!</span>';
+      teachSubmit.style.background = 'linear-gradient(135deg,#f59e0b,#fbbf24)';
+      teachSuccess.classList.add('show');
+      setTimeout(() => window.open(`https://wa.me/918639831132?text=${waMsg}`, '_blank'), 600);
+      setTimeout(() => {
+        teachForm.reset();
+        teachSubmit.disabled = false;
+        teachSubmit.innerHTML = '<i class="ph-fill ph-paper-plane-tilt"></i> <span>Apply to Teach</span>';
+        teachSubmit.style.background = '';
+        teachSuccess.classList.remove('show');
+      }, 5000);
+    });
+  }
+
 });
